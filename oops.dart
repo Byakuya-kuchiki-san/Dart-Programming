@@ -19,6 +19,9 @@ class Vehicle{
 }
 // While using extends keyword all the properties from vehicle class can be used in bus class
 class bus extends Vehicle{
+  fn(){
+    print(isBrakeWorking);
+  }
   @override
   void accelerate(){
     print("bus is accelerating by speed 20 m/s");
