@@ -19,19 +19,20 @@ void main(){
 
 class Employee{
   String name;
-  final type;
+  final employeeType type;
   Employee(this.name, this.type);
 
+  // void functio(){
+  //   switch(type){
+  //     case employeeType.swe:
+  //     print("${this.name}'s salary is ${type.salary}");
+  //     case employeeType.architect:
+  //     print("${this.name}'s salary is ${type.salary} ");
+  //     case employeeType.bsdk:
+  //     print("${this.name}'s salary is ${type.salary}");
+  //   }
+  // or we can just print it
   void functio(){
-    switch(type){
-      case employeeType.swe:
-      print("${this.name}'s salary is ${employeeType.swe.salary}");
-      case employeeType.architect:
-      print("${this.name}'s salary is ${employeeType.architect.salary} ");
-      case employeeType.bsdk:
-      print("${this.name}'s salary is ${employeeType.bsdk.salary}");
-      default:
-      print("Some unknown errors have occured");
-    }
+  print("${this.name} salary is ${type.salary}");
   }
-}
+  }
