@@ -5,6 +5,7 @@ void main(){
   employee1.functio();
   employee2.functio();
   employee3.functio();
+  
 }
 
   enum employeeType{
@@ -24,11 +25,11 @@ class Employee{
   void functio(){
     switch(type){
       case employeeType.swe:
-      print("he is a well known software developer");
+      print("${this.name}'s salary is ${employeeType.swe.salary}");
       case employeeType.architect:
-      print('she is well known architect');
+      print("${this.name}'s salary is ${employeeType.architect.salary} ");
       case employeeType.bsdk:
-      print('this person is bsdk');
+      print("${this.name}'s salary is ${employeeType.bsdk.salary}");
       default:
       print("Some unknown errors have occured");
     }
